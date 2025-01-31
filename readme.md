@@ -36,3 +36,4 @@ This repository contains the configuration used to replicate a (possible) bug in
 
 - Step 7 can be done in the UI as well. Open the document in the browser, click on the `Upload new version`, select the file and confirm the upload. A window with progress bar is shown but never finishes and eventually fails with 504 Gateway Timeout error. The document version is incremented.
 - The `rn:renditioned` aspect is added to the document every time it's displayed in the UI. The aspect can be added to the document by calling renditions api: `http://localhost:8080/alfresco/api/-default-/public/alfresco/versions/1/nodes/{{documentId}}/renditions`.
+- Updating just the document properties (not the conent) works fine.   
